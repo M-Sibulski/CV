@@ -1,0 +1,141 @@
+:root {
+    --primary-color: rgb(80, 38, 80);
+}
+
+body {
+    background: rgb(53, 53, 53);
+    background-image: url(/images/Onion_Photo_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Consolas, sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em;
+    // width: 1024px;
+}
+
+header {
+    text-align: center;
+    display: block;
+    img {
+        height: 8em;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: clip-path 1s ease-in-out;
+    }
+    img:hover {        
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    h1 {
+        color: white;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Exotc350 DmBd BT', sans-serif;
+        margin-top: -0.5em;
+        }
+}
+
+.active {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    background: rgba(56, 27, 56, 0.822);
+    border-radius: 1em;
+    padding: .45em 4em;
+    display: flex;
+    text-align: center;
+    place-content: space-between;
+    a {
+        font-size: 1em;
+        color: rgb(194, 194, 194);
+    }
+    a:hover {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+main {
+    //height: 400px;
+    padding: 3em 5em;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    color: rgb(190, 190, 190);
+    width: 10em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    color: white;
+    //width: 20em;
+    padding: 0 10em;
+    text-align: justify;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book{    
+    width: 10em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--primary-color);
+    border-radius: 3em;
+    border: 10px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    
+}
+
+a {
+    color: white;        
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+.cry {
+    font-size: 220%;
+    color: rgb(221, 221, 221);
+}
+
+.more {
+    font-size: 195%;
+    color: white;
+}
+
+footer {
+    margin-bottom: 3em;
+}
+
+iframe {
+    width: 100%;
+    height: 20em;
+}
+
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 990px;
+    }
+    p {
+        padding: 0 15em;
+    }
+}
