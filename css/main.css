@@ -74,8 +74,19 @@ nav a:hover {
   font-weight: bold;
 }
 
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  place-content: space-between;
+  width: 100%;
+}
+
 main {
-  padding: 3em 5em;
+  padding: 3em 5vw;
   text-align: center;
 }
 
@@ -92,7 +103,7 @@ h2 {
 
 p {
   color: white;
-  padding: 0 10em;
+  padding: 0 8vw;
   text-align: justify;
   margin-top: 4em;
   margin-left: auto;
@@ -143,7 +154,16 @@ iframe {
     width: 990px;
   }
   p {
-    padding: 0 15em;
+    padding: 0 15vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  /* a:not(.active) {
+        visibility: hidden;
+    } */
+  nav {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
